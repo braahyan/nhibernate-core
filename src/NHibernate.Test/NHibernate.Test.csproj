@@ -1024,6 +1024,9 @@
     <Compile Include="MappingByCode\IntegrationTests\NH3105\Model.cs" />
     <Compile Include="MappingByCode\IntegrationTests\NH3105\Fixture.cs" />
     <Compile Include="NHSpecificTest\NH3436\Fixture.cs" />
+    <Compile Include="NHSpecificTest\NH3609\Entity.cs" />
+    <Compile Include="NHSpecificTest\NH3609\Fixture.cs" />
+    <Compile Include="NHSpecificTest\NH3609\MappingEntity.cs" />
     <Compile Include="NHSpecificTest\NH941\Domain.cs" />
     <Compile Include="NHSpecificTest\NH941\Fixture.cs" />
     <Compile Include="NHSpecificTest\NH941\FixtureUsingList.cs" />
@@ -2883,6 +2886,7 @@
     <EmbeddedResource Include="NHSpecificTest\NH1291AnonExample\Mappings.hbm.xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="NHSpecificTest\NH3609\Mappings.hbm.xml" />
     <EmbeddedResource Include="NHSpecificTest\NH3408\Mappings.hbm.xml" />
     <EmbeddedResource Include="NHSpecificTest\NH2408\Mappings.hbm.xml" />
     <EmbeddedResource Include="NHSpecificTest\NH2297\MappingsNames.hbm.xml" />

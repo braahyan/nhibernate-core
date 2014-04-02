@@ -20,7 +20,8 @@ namespace NHibernate.Criterion
 
 		public virtual SqlString ToSqlString(ICriteria criteria, int position, ICriteriaQuery criteriaQuery, IDictionary<string, IFilter> enabledFilters)
 		{
-			return projection.ToSqlString(criteria, position, criteriaQuery, enabledFilters);
+		    var thinger = projection.ToSqlString(criteria, position, criteriaQuery, enabledFilters);
+			return thinger;
 		}
 
 		public virtual SqlString ToGroupSqlString(ICriteria criteria, ICriteriaQuery criteriaQuery, IDictionary<string, IFilter> enabledFilters)

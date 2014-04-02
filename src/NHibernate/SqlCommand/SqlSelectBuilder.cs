@@ -1,4 +1,3 @@
-
 using NHibernate.Engine;
 using NHibernate.Type;
 using NHibernate.Util;
@@ -18,7 +17,7 @@ namespace NHibernate.SqlCommand
 		private SqlString whereClause;
 		private SqlString outerJoinsAfterWhere;
 		private SqlString orderByClause;
-		private string groupByClause;
+        private SqlString groupByClause;
 		private SqlString havingClause;
 		private LockMode lockMode;
 		private string comment;
@@ -83,7 +82,7 @@ namespace NHibernate.SqlCommand
 		/// </summary>
 		/// <param name="groupByClause">The groupByClause to set</param>
 		/// <returns>The SqlSelectBuilder</returns>
-		public SqlSelectBuilder SetGroupByClause(string groupByClause)
+        public SqlSelectBuilder SetGroupByClause(SqlString groupByClause)
 		{
 			this.groupByClause = groupByClause;
 			return this;
